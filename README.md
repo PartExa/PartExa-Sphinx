@@ -1,1 +1,0 @@
-# PartExa-Sphinx
