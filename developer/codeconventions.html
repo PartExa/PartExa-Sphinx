@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Documentation &mdash; PartExa - A Particle Library for the Exa-Scale  documentation</title>
+  <title>Code Conventions &mdash; PartExa - A Particle Library for the Exa-Scale  documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/logo_white_rounded_small.png"/>
@@ -19,8 +19,7 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Code Conventions" href="codeconventions.html" />
-    <link rel="prev" title="Development instructions" href="developer.html" /> 
+    <link rel="prev" title="Documentation" href="documentation.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -46,12 +45,11 @@
 <p class="caption" role="heading"><span class="caption-text">Development guide</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="developer.html">Development instructions</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Documentation</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#sphinx-documentation">Sphinx documentation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#doxygen-documentation">Doxygen documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="documentation.html">Documentation</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Code Conventions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#license-headers">License headers</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="codeconventions.html">Code Conventions</a></li>
 </ul>
 </li>
 </ul>
@@ -71,9 +69,9 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
           <li><a href="developer.html">Development instructions</a> &raquo;</li>
-      <li>Documentation</li>
+      <li>Code Conventions</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/developer/documentation.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/developer/codeconventions.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -83,32 +81,52 @@
              
   <div class="toctree-wrapper compound">
 </div>
-<section id="documentation">
-<span id="id1"></span><h1>Documentation<a class="headerlink" href="#documentation" title="Permalink to this headline"></a></h1>
-<p>Writing reliable documentation of a software project is an essential part in software development.
-In this context, important aspects are amongst others to provide a getting started guide and
-installation instructions, to give an overview of implemented feautures, and to cover source code
-documentation. Hence, proper documentation improves the quality of a software project as it
-facilitates development and maintability, and ensures transfer of knowledge amongst users and
-developers. For this reason, within PartExa it is mandatory to write and keep documentation up to
-date.</p>
-<p>The documentation of PartExa is twofold:</p>
-<ul class="simple">
-<li><p>Installation and development guides are provided within a Sphinx-based documentation.</p></li>
-<li><p>Source code documentation is generated using Doxygen.</p></li>
-</ul>
+<section id="code-conventions">
+<span id="codeconventions"></span><h1>Code Conventions<a class="headerlink" href="#code-conventions" title="Permalink to this headline"></a></h1>
+<p>This page provides the general code conventions that are followed in PartExa.</p>
+<section id="license-headers">
+<h2>License headers<a class="headerlink" href="#license-headers" title="Permalink to this headline"></a></h2>
+<p>The license header of the files in the repository shall be compliant with a standard license
+header that looks, e.g., for <cite>CMake</cite> files, as:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">## ---------------------------------------------------------------------</span>
+<span class="c1">##</span>
+<span class="c1">## PartExa - A Particle Library for the Exa-Scale</span>
+<span class="c1">##</span>
+<span class="c1">## Copyright (C) 2021 by the PartExa authors</span>
+<span class="c1">##</span>
+<span class="c1">## This program is free software: you can redistribute it and/or modify</span>
+<span class="c1">## it under the terms of the GNU General Public License as published by</span>
+<span class="c1">## the Free Software Foundation, either version 3 of the License, or</span>
+<span class="c1">## (at your option) any later version.</span>
+<span class="c1">##</span>
+<span class="c1">## This program is distributed in the hope that it will be useful,</span>
+<span class="c1">## but WITHOUT ANY WARRANTY; without even the implied warranty of</span>
+<span class="c1">## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the</span>
+<span class="c1">## GNU General Public License for more details.</span>
+<span class="c1">##</span>
+<span class="c1">## You should have received a copy of the GNU General Public License</span>
+<span class="c1">## along with this program. If not, see &lt;https://www.gnu.org/licenses/&gt;.</span>
+<span class="c1">##</span>
+<span class="c1">## ---------------------------------------------------------------------</span>
+</pre></div>
+</div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Recent precomiled versions of the <a class="reference external" href="https://partexa.github.io/PartExa-Sphinx/">Sphinx</a> and
-<a class="reference external" href="https://partexa.github.io/PartExa-Doxygen/">Doxygen</a> documentation are provided online.</p>
+<p>The year(s) within the copyright statement is set to the year a file is added to the repo (e.g.,
+2021), or to the time span a file is created and modified last (e.g. 2021-2025).</p>
 </div>
-<section id="sphinx-documentation">
-<h2>Sphinx documentation<a class="headerlink" href="#sphinx-documentation" title="Permalink to this headline"></a></h2>
-<p>Todo!</p>
-</section>
-<section id="doxygen-documentation">
-<h2>Doxygen documentation<a class="headerlink" href="#doxygen-documentation" title="Permalink to this headline"></a></h2>
-<p>Todo!</p>
+<p>For convenience, scripts are provided that check the license header of all files respectively of
+files changed with respect to the latest master.</p>
+<p>To check the license headers of all files execute:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">cd &lt;partexa_source&gt;</span>
+<span class="go">./utilities/license-header/check-all-files.sh</span>
+</pre></div>
+</div>
+<p>To check the license headers of all files changed with respect to the latest master version execute:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">cd &lt;partexa_source&gt;</span>
+<span class="go">./utilities/license-header/check-changed-files.sh</span>
+</pre></div>
+</div>
 </section>
 </section>
 
@@ -116,8 +134,7 @@ date.</p>
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="developer.html" class="btn btn-neutral float-left" title="Development instructions" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="codeconventions.html" class="btn btn-neutral float-right" title="Code Conventions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="documentation.html" class="btn btn-neutral float-left" title="Documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>
