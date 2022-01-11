@@ -7,6 +7,7 @@
   <title>PartExa - A Particle Library for the Exa-Scale &mdash; PartExa - A Particle Library for the Exa-Scale  documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="shortcut icon" href="_static/logo_white_rounded_small.png"/>
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -17,7 +18,8 @@
         <script src="_static/doctools.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" /> 
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Installation instructions" href="installation/installation.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -36,11 +38,15 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <!-- Local TOC -->
-              <div class="local-toc"><ul>
-<li><a class="reference internal" href="#">PartExa - A Particle Library for the Exa-Scale</a></li>
+              <p class="caption" role="heading"><span class="caption-text">Installation guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="installation/installation.html">Installation instructions</a></li>
 </ul>
-</div>
+<p class="caption" role="heading"><span class="caption-text">Development guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="developer/developer.html">Development instructions</a></li>
+</ul>
+
         </div>
       </div>
     </nav>
@@ -72,19 +78,49 @@ techniques. PartExa strongly depends on the finite element library
 <a class="reference external" href="https://www.dealii.org/">deal.II</a> along with <a class="reference external" href="https://www.p4est.org/">p4est</a> for parallel
 distributed adaptive quadtrees and octrees. deal.II provides basic particle functionality with a
 strong focus on efficient data structures and aspects of parallelization.</p>
+<p>The major features of PartExa include</p>
+<ul class="simple">
+<li><p>generic neighbor search algorithms for particle-particle, particle-cell, particle-face, and
+particle-vertex pairs,</p></li>
+<li><p>multiple phases and transition of particles between phases,</p></li>
+<li><p>cluster of particles that are connected by (rigid) bonds, and</p></li>
+<li><p>evaluation routines for a variety of particle methods such as the Discrete Element Method (DEM),
+Smoothed Particle Hydrodynamics (SPH), and Peridynamics (PD).</p></li>
+</ul>
+<p>Making use of the sophisticated interfaces and data structures provided by deal.II facilitates the
+coupling of PartExa with other deal.II-based programs.</p>
 <div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">Installation guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="installation/installation.html">Installation instructions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="installation/dependencies.html">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation/configuration.html">Configuration and installation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">Development guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="developer/developer.html">Development instructions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="developer/documentation.html">Documentation</a></li>
+</ul>
+</li>
+</ul>
 </div>
 </section>
 
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="installation/installation.html" class="btn btn-neutral float-right" title="Installation instructions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright .</p>
+    <p>&#169; Copyright 2021-2022 by the PartExa authors.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
