@@ -117,14 +117,19 @@ header that looks, e.g., for <cite>CMake</cite> files, as:</p>
 </div>
 <p>For convenience, scripts are provided that check the license header of all files respectively of
 files changed with respect to the latest master.</p>
-<p>To check the license headers of all files execute:</p>
+<p>To check the license headers of all files as of the current checked out commit execute:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">cd &lt;partexa_source&gt;</span>
-<span class="go">./utilities/license-header/check-all-files.sh</span>
+<span class="go">./utilities/license-header/run-check-on-current-head.sh</span>
 </pre></div>
 </div>
-<p>To check the license headers of all files changed with respect to the latest master version execute:</p>
+<p>To check the license headers of all files changed on the current branch with respect to the latest master version execute:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">cd &lt;partexa_source&gt;</span>
-<span class="go">./utilities/license-header/check-changed-files.sh</span>
+<span class="go">./utilities/license-header/run-check-on-current-branch.sh</span>
+</pre></div>
+</div>
+<p>Finally, to check the license headers of all indexed files prior to a commit execute:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">cd &lt;partexa_source&gt;</span>
+<span class="go">./utilities/license-header/run-check-on-indexed-files.sh</span>
 </pre></div>
 </div>
 </section>
